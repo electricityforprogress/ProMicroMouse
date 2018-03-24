@@ -47,7 +47,7 @@ void loop() {
   }
   else {
     digitalWrite(LED1, LOW); // turn off LED, button not pressed
-    if(buttonLprev != buttonLState) { // stage changed from High to Low
+    if(buttonLprev != buttonLState) { // state changed from High to Low
       //button released
     }
   }
@@ -65,7 +65,7 @@ void loop() {
   }
   else {
     digitalWrite(LED2, LOW); // turn off LED, button not pressed
-    if(buttonRprev != buttonRState) { // stage changed from High to Low
+    if(buttonRprev != buttonRState) { // state changed from High to Low
       //button released
     }
   }
