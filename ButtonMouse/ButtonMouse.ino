@@ -41,7 +41,7 @@ void loop() {
         //that the cursor is centered on the corner
         //perhaps use bottom corners instead of top to 'hide' the 
         //cursor arrow/pointer
-        
+        Mouse.move(1000,250);
         //  Mouse.click(); // click on that spot
     }
   }
@@ -60,6 +60,7 @@ void loop() {
       for(byte i=0;i<100; i++) {
           Mouse.move(1000, -1000);
       }
+      Mouse.move(-1000,250);
              //   Mouse.click(); // click on that spot
     }
   }
