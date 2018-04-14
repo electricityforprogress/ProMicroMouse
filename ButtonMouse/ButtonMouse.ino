@@ -2,7 +2,7 @@
 /*
 Button Mouse - physical buttons which cause clicks in specific
 screen locations for activating controls in Eko and other interfaces
-*/
+*/ 
 
 #include "Mouse.h"
 
@@ -22,7 +22,7 @@ void setup() {
 
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
- 
+
 }
 
 void loop() {
@@ -31,7 +31,10 @@ void loop() {
   byte buttonRState = digitalRead(buttonR); // read from the button
   
   if(buttonLState == HIGH) { // button pressed
+    
     digitalWrite(LED1, HIGH); // turn on LED
+    //digitalWrite(LED1, LOW); // turn off LED
+    
     if(buttonLprev != buttonLState) { // state changed from Low to High
     //move mouse to L location and perform Click event
       for(byte i=0;i<100; i++) {
